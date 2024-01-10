@@ -15,7 +15,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-            'user_id' => $user->id,
+    
+            BookingSeeder::class,
+            InfowebSeeder::class
         ]);
     }
 }
